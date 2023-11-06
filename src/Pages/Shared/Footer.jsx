@@ -3,13 +3,13 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <div>
-      <footer className="footer footer-center p-10 bg-orange-900 text-primary-content">
+      <footer className="footer footer-center p-10 bg-orange-800 text-primary-content">
         <aside>
           <div className="mt-8">
             <div>
               <Link to="/" className="md:flex justify-center gap-1">
                 <img
-                  className="h-7 w-7"
+                  className="h-7 w-7 mt-1.5"
                   src="https://i.ibb.co/WvwQBxw/Good-food-logo-design-on-transparent-background-PNG.png"
                   alt=""
                 />
@@ -20,7 +20,7 @@ const Footer = () => {
               </Link>
             </div>
 
-            <div className="">
+            <div className="mt-3">
               <p className="text-xl font-bold text-center">
                 Contact
               </p>
@@ -31,7 +31,7 @@ const Footer = () => {
               <p className="">Email Address: booking@brandshop.me</p>
             </div>
 
-            <p className="font-semibold mt-4">Follow us on :</p>
+            <p className="font-semibold mt-3">Follow us on :</p>
           </div>
         </aside>
         <nav>
@@ -71,7 +71,7 @@ const Footer = () => {
             </a>
           </div>
         </nav>
-        <p className="-mt-6">
+        <p className="-mt-7">
           Providing reliable tech since 1992. <br /> Copyright © 2023 - All
           right reserved by Restaurant Management System Ltd.
         </p>
