@@ -21,7 +21,7 @@ const Navbar = () => {
               style={({ isActive }) => {
                 return {
                   textDecoration: isActive ? "underline" : "",
-                  color: isActive ? "blue" : "",
+                  color: isActive ? "orange" : "",
                 };
               }}
             >
@@ -35,7 +35,7 @@ const Navbar = () => {
               style={({ isActive }) => {
                 return {
                   textDecoration: isActive ? "underline" : "",
-                  color: isActive ? "blue" : "",
+                  color: isActive ? "orange" : "",
                 };
               }}
             >
@@ -48,7 +48,7 @@ const Navbar = () => {
               style={({ isActive }) => {
                 return {
                   textDecoration: isActive ? "underline" : "",
-                  color: isActive ? "blue" : "",
+                  color: isActive ? "orange" : "",
                 };
               }}
             >
@@ -62,7 +62,7 @@ const Navbar = () => {
               style={({ isActive }) => {
                 return {
                   textDecoration: isActive ? "underline" : "",
-                  color: isActive ? "blue" : "",
+                  color: isActive ? "orange" : "",
                 };
               }}
             >
@@ -76,7 +76,7 @@ const Navbar = () => {
               style={({ isActive }) => {
                 return {
                   textDecoration: isActive ? "underline" : "",
-                  color: isActive ? "blue" : "",
+                  color: isActive ? "orange" : "",
                 };
               }}
             >
@@ -100,7 +100,7 @@ const Navbar = () => {
     </>
   );
   return (
-    <div className="flex flex-col-reverse justify-center lg:flex-row md:justify-between lg:justify-between items-center">
+    <div className="flex flex-col-reverse justify-center lg:flex-row md:justify-between lg:justify-between items-center bg-yellow-100">
       <div className="overflow-hidden">
         <ul className=" font-raleway p-2 font-bold rounded-md text-sm md:text-lg lg:text-lg">
           {navLink}
@@ -113,7 +113,7 @@ const Navbar = () => {
   <li><NavLink to='/cart' style={({ isActive }) => {
     return {
       textDecoration: isActive ? "underline" : "",
-      color: isActive ? "blue" : "",
+      color: isActive ? "orange" : "",
     };
   }}
 >My Cart</NavLink></li>
@@ -126,7 +126,7 @@ const Navbar = () => {
 <div className="">
 {
   user && user.photoURL? 
-<img className="w-9 h-9 rounded-full border border-blue-700 p-0.5" src={user.photoURL} alt=""/>:
+<img className="w-9 h-9 rounded-full border border-orange-700 p-0.5" src={user.photoURL} alt=""/>:
 <img className="w-7 h-7" src="https://i.ibb.co/P5hTkcJ/1144811.png" alt=""/>
   }
 </div>
@@ -135,13 +135,13 @@ const Navbar = () => {
   <p>{user?.displayName}</p>
 </div>
 
- <button onClick={handleSignOut} className=" bg-blue-600 text-white p-2 rounded-md font-concert px-4 "> logOut </button>
+ <button onClick={handleSignOut} className=" bg-orange-600 text-white p-2 rounded-md font-concert px-4 "> logOut </button>
 </>
  
  :
 
   <Link to='/login'>
-<button className=" bg-blue-600 text-white p-2 rounded-md font-concert px-4 "> LogIn </button>
+<button className=" bg-orange-600 text-white p-2 rounded-md font-concert px-4 "> LogIn </button>
 </Link>
 }
 
