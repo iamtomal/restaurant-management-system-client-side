@@ -21,7 +21,7 @@ const Navbar = () => {
               style={({ isActive }) => {
                 return {
                   textDecoration: isActive ? "underline" : "",
-                  color: isActive ? "orange" : "",
+                  color: isActive ? "red" : "",
                 };
               }}
             >
@@ -35,7 +35,7 @@ const Navbar = () => {
               style={({ isActive }) => {
                 return {
                   textDecoration: isActive ? "underline" : "",
-                  color: isActive ? "orange" : "",
+                  color: isActive ? "red" : "",
                 };
               }}
             >
@@ -48,7 +48,7 @@ const Navbar = () => {
               style={({ isActive }) => {
                 return {
                   textDecoration: isActive ? "underline" : "",
-                  color: isActive ? "orange" : "",
+                  color: isActive ? "red" : "",
                 };
               }}
             >
@@ -62,7 +62,7 @@ const Navbar = () => {
               style={({ isActive }) => {
                 return {
                   textDecoration: isActive ? "underline" : "",
-                  color: isActive ? "orange" : "",
+                  color: isActive ? "red" : "",
                 };
               }}
             >
@@ -76,7 +76,7 @@ const Navbar = () => {
               style={({ isActive }) => {
                 return {
                   textDecoration: isActive ? "underline" : "",
-                  color: isActive ? "orange" : "",
+                  color: isActive ? "red" : "",
                 };
               }}
             >
@@ -91,8 +91,8 @@ const Navbar = () => {
               src="https://i.ibb.co/WvwQBxw/Good-food-logo-design-on-transparent-background-PNG.png"
               alt=""
             />
-            <p className="font-concert font-bold text-xl text-yellow-500">
-              <span className="text-yellow-600">R</span>estauant Management System
+            <p className="font-concert font-bold text-xl text-orange-500">
+              <span className="text-orange-600">R</span>estauant Management System
             </p>
           </Link>
         </div>
@@ -100,7 +100,7 @@ const Navbar = () => {
     </>
   );
   return (
-    <div className="flex flex-col-reverse justify-center lg:flex-row md:justify-between lg:justify-between items-center bg-yellow-100">
+    <div className="flex flex-col-reverse justify-center lg:flex-row md:justify-between lg:justify-between items-center bg-orange-200">
       <div className="overflow-hidden">
         <ul className=" font-raleway p-2 font-bold rounded-md text-sm md:text-lg lg:text-lg">
           {navLink}

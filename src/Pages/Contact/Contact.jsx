@@ -15,9 +15,7 @@ const Contact = () => {
       <div className="flex flex-col lg:flex-row md:flex-row-reverse justify-center md:gap-6 lg:gap-8 ">
         <div
           className="my-4"
-          data-aos="fade-right"
-          data-aos-offset="300"
-          data-aos-easing="ease-in-sine"
+          data-aos="flip-down"
         >
           <div className=" text-white p-8 bg-orange-950">
             <p className="text-3xl font-semibold text-center">
@@ -32,9 +30,7 @@ const Contact = () => {
         </div>
         <div
           className="my-4"
-          data-aos="fade-left"
-          data-aos-offset="300"
-          data-aos-easing="ease-in-sine"
+          data-aos="flip-up"
         >
           <div className=" text-white p-8 bg-orange-800">
             <p className="text-3xl font-semibold text-center">Social Media</p>
