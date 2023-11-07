@@ -1,8 +1,9 @@
+import Contact from "../Contact/Contact";
 
 const Home = () => {
     return (
         <div>
-            This is Home Page.
+            <Contact></Contact>
         </div>
     );
 };

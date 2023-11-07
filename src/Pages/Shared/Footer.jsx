@@ -28,7 +28,7 @@ const Footer = () => {
 
               <p >Mobile Number: +971 58 539 4689</p>
 
-              <p className="">Email Address: booking@brandshop.me</p>
+              <p className="">Email Address: management@restaurant.me</p>
             </div>
 
             <p className="font-semibold mt-3">Follow us on :</p>
