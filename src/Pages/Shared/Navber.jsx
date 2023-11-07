@@ -2,14 +2,11 @@ import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProvider";
 import { useContext } from "react";
 
-
 const Navbar = () => {
-    const {user, logOut} = useContext(AuthContext);
+  const { user, logOut } = useContext(AuthContext);
 
   const handleSignOut = () => {
-      logOut()
-      .then()
-      .catch()
+    logOut().then().catch();
   };
 
   const navLink = (
@@ -93,7 +90,8 @@ const Navbar = () => {
               alt=""
             />
             <p className="font-concert font-bold text-xl text-orange-500">
-              <span className="text-orange-600">R</span>estauant Management System
+              <span className="text-orange-600">R</span>estauant Management
+              System
             </p>
           </Link>
         </div>
@@ -109,36 +107,54 @@ const Navbar = () => {
       </div>
 
       <div className="flex justify-center gap-4 items-center">
+        {user ? (
+          <>
+            <div className="">
+              {user && user.photoURL ? (
+                <><div className="dropdown dropdown-bottom">
+                    <label tabIndex={0} className=" m-1"><img
+                  className="w-9 h-9 rounded-full border border-orange-700 p-0.5"
+                  src={user.photoURL}
+                  alt="" /></label>
+                    <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
+                      <Link to={'/addedFoodItems'}><li><a>My added food items</a></li></Link>
+                      <Link to={'/addFood'}><li><a>Add a food item</a></li></Link>
+                      <Link to={'/orderedFood'}><li><a>My ordered food item</a></li></Link>
+                      
+                    </ul>
+                  </div></>
 
 
+              ) : (
+                <img
+                  className="w-7 h-7"
+                  src="https://i.ibb.co/P5hTkcJ/1144811.png"
+                  alt=""
+                />
+              )}
+            </div>
 
+            <div className="font-raleway font-extrabold">
+              <p>{user?.displayName}</p>
+            </div>
 
-
-{user ? 
-<>
-<div className="">
-{
-  user && user.photoURL? 
-<img className="w-9 h-9 rounded-full border border-orange-700 p-0.5" src={user.photoURL} alt=""/>:
-<img className="w-7 h-7" src="https://i.ibb.co/P5hTkcJ/1144811.png" alt=""/>
-  }
-</div>
-
-<div className="font-raleway font-extrabold">
-  <p>{user?.displayName}</p>
-</div>
-
- <button onClick={handleSignOut} className=" bg-orange-600 text-white p-2 rounded-md font-concert px-4 "> logOut </button>
-</>
- 
- :
-
-  <Link to='/login'>
-<button className=" bg-orange-600 text-white p-2 rounded-md font-concert px-4 "> LogIn </button>
-</Link>
-}
-
-</div>
+            <button
+              onClick={handleSignOut}
+              className=" bg-orange-600 text-white p-2 rounded-md font-concert px-4 "
+            >
+              {" "}
+              logOut{" "}
+            </button>
+          </>
+        ) : (
+          <Link to="/login">
+            <button className=" bg-orange-600 text-white p-2 rounded-md font-concert px-4 ">
+              {" "}
+              LogIn{" "}
+            </button>
+          </Link>
+        )}
+      </div>
     </div>
   );
 };

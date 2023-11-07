@@ -7,6 +7,9 @@ import Contact from "../Pages/Contact/Contact";
 import Sponsor from "../Pages/Home/Sponsor/Sponsor";
 import Login from "../Login/Login";
 import Register from "../Register/Register";
+import AddedFoodItems from "../Food/AddedFoodItems/AddedFoodItems";
+import AddFood from "../Food/AddedFoodItems/AddFood/AddFood";
+import OrderedFood from "../Food/OrderedFood/OrderedFood";
 
 
 const router = createBrowserRouter([
@@ -40,6 +43,18 @@ const router = createBrowserRouter([
         {
             path:'/register',
             element:<Register></Register>
+        },
+        {
+            path:'/addedFoodItems',
+            element:<AddedFoodItems></AddedFoodItems>
+        },
+        {
+            path:'/addFood',
+            element:<AddFood></AddFood>
+        },
+        {
+            path:'/orderedFood',
+            element:<OrderedFood></OrderedFood>
         },
         
     ]
