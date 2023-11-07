@@ -9,7 +9,7 @@ const Footer = () => {
             <div>
               <Link to="/" className="md:flex justify-center gap-1">
                 <img
-                  className="h-7 w-7 mt-1.5"
+                  className="h-7 w-7 mt-1.5 border-2 border-red-900 rounded-full"
                   src="https://i.ibb.co/WvwQBxw/Good-food-logo-design-on-transparent-background-PNG.png"
                   alt=""
                 />

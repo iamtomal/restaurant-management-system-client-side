@@ -12,7 +12,7 @@ const Sponsor = () => {
 
 
       <div>
-        <p className=" font-concert text-center text-6xl text-orange-700 mt-3">
+        <p className=" font-concert text-center text-4xl text-orange-700 mt-3">
           Our Partners
         </p>
         <Marquee direction="right">

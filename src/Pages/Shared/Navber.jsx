@@ -1,15 +1,16 @@
-// import { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
-// import { AuthContext } from "../../../providers/AuthProvider";
+import { AuthContext } from "../../providers/AuthProvider";
+import { useContext } from "react";
+
 
 const Navbar = () => {
-  //   const {user, logOut} = useContext(AuthContext);
+    const {user, logOut} = useContext(AuthContext);
 
-//   const handleSignOut = () => {
-    //   logOut()
-    //   .then()
-    //   .catch()
-//   };
+  const handleSignOut = () => {
+      logOut()
+      .then()
+      .catch()
+  };
 
   const navLink = (
     <>
@@ -87,7 +88,7 @@ const Navbar = () => {
         <div>
           <Link to="/" className="flex justify-center gap-1">
             <img
-              className="h-7 w-7"
+              className="h-7 w-7 border-2 border-red-500 rounded-full"
               src="https://i.ibb.co/WvwQBxw/Good-food-logo-design-on-transparent-background-PNG.png"
               alt=""
             />
@@ -107,17 +108,9 @@ const Navbar = () => {
         </ul>
       </div>
 
-      {/* <div className="flex justify-center gap-4 items-center">
+      <div className="flex justify-center gap-4 items-center">
 
-  <ul className=" font-raleway p-2 font-bold rounded-md text-sm md:text-lg lg:text-lg">
-  <li><NavLink to='/cart' style={({ isActive }) => {
-    return {
-      textDecoration: isActive ? "underline" : "",
-      color: isActive ? "orange" : "",
-    };
-  }}
->My Cart</NavLink></li>
-      </ul>
+
 
 
 
@@ -145,7 +138,7 @@ const Navbar = () => {
 </Link>
 }
 
-</div> */}
+</div>
     </div>
   );
 };

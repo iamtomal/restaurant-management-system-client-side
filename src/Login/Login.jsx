@@ -1,13 +1,13 @@
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import swal from "sweetalert";
-// import { GoogleAuthProvider, getAuth, signInWithPopup } from "firebase/auth";
-// import app from "../firebase/firebase.config";
-// import { useContext } from "react";
-// import { AuthContext } from "../providers/AuthProvider";
+import { GoogleAuthProvider, getAuth, signInWithPopup } from "firebase/auth";
+import app from "../firebase/firebase.config";
+import { useContext } from "react";
+import { AuthContext } from "../providers/AuthProvider";
 
 const Login = () => {
-//   const auth = getAuth(app);
-//   const provider = new GoogleAuthProvider();
+  const auth = getAuth(app);
+  const provider = new GoogleAuthProvider();
   const location = useLocation();
   const navigate = useNavigate();
   const handleGoogleSignIn = () => {
@@ -18,7 +18,7 @@ const Login = () => {
       .catch();
   };
 
-//   const { signIn } = useContext(AuthContext);
+  const { signIn } = useContext(AuthContext);
 
   const handleLogin = (e) => {
     e.preventDefault();

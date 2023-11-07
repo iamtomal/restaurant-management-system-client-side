@@ -8,8 +8,8 @@ const Contact = () => {
   }, []);
 
   return (
-    <div>
-      <p className=" font-concert text-center text-6xl text-orange-700">
+    <div className="my-6">
+      <p className=" font-concert text-center text-4xl text-orange-700">
         Contact
       </p>
       <div className="flex flex-col lg:flex-row md:flex-row-reverse justify-center md:gap-6 lg:gap-8 ">
