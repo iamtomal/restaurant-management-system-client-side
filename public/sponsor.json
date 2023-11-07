@@ -1,0 +1,53 @@
+[
+    {
+      "id": 2,
+      "sponsor_name": "Coka Cola",
+      "sponsor_image": "https://wp.bssnews.net/wp-content/uploads/2020/03/Coca-Cola-.jpg"
+    },
+    {
+      "id": 3,
+      "sponsor_name": "Fresh",
+      "sponsor_image": "https://png.pngtree.com/png-clipart/20201208/original/pngtree-fresh-cooking-logo-png-image_5570598.jpg"
+    },
+    {
+      "id": 4,
+      "sponsor_name": "Pran Water",
+      "sponsor_image": "https://www.pranfoods.net/sites/default/files/water_website_01-min.png"
+    },
+    {
+      "id": 5,
+      "sponsor_name": "Rupchada",
+      "sponsor_image": "https://mir-s3-cdn-cf.behance.net/projects/404/f65503180056037.Y3JvcCw4MDgsNjMyLDAsMA.png"
+    },
+    {
+      "id": 7,
+      "sponsor_name": "Pepsi",
+      "sponsor_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Pepsi_2023.svg/1200px-Pepsi_2023.svg.png"
+    },
+    {
+      "id": 8,
+      "sponsor_name": "MUM",
+      "sponsor_image": "https://trustfamilyneeds.com/public/uploads/all/f1hKvEb4f54c4hKLOdSExddd22j1CMCzSxGfVzYV.jpeg"
+    },
+    {
+      "id": 9,
+      "sponsor_name": "Dano",
+      "sponsor_image": "https://dano.com.ng/wp-content/uploads/2016/09/Dano-Logo_.png"
+    },
+    {
+      "id": 10,
+      "sponsor_name": "Fresh Water",
+      "sponsor_image": "https://cdn.dribbble.com/users/2139452/screenshots/4882929/media/81e564736794776ff77b58985811b347.jpg"
+    },
+    {
+      "id": 11,
+      "sponsor_name": "7 up",
+      "sponsor_image": "https://1000logos.net/wp-content/uploads/2018/03/7Up-Logo-1987.png"
+    },
+    {
+      "id": 12,
+      "sponsor_name": "Polar",
+      "sponsor_image": "https://1.bp.blogspot.com/-6UDfGbPvmuk/VqoHval2cVI/AAAAAAAADG8/y6W3pKQx8pc/s1600/polar-ice-cream.jpg"
+    }
+  ]
+
