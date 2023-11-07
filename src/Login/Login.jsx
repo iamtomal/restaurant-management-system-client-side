@@ -1,9 +1,13 @@
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import swal from "sweetalert";
-
+// import { GoogleAuthProvider, getAuth, signInWithPopup } from "firebase/auth";
+// import app from "../firebase/firebase.config";
+// import { useContext } from "react";
+// import { AuthContext } from "../providers/AuthProvider";
 
 const Login = () => {
-
+//   const auth = getAuth(app);
+//   const provider = new GoogleAuthProvider();
   const location = useLocation();
   const navigate = useNavigate();
   const handleGoogleSignIn = () => {
@@ -14,7 +18,7 @@ const Login = () => {
       .catch();
   };
 
-
+//   const { signIn } = useContext(AuthContext);
 
   const handleLogin = (e) => {
     e.preventDefault();
@@ -66,20 +70,20 @@ const Login = () => {
                 />
               </div>
               <div className="form-control mt-6">
-                <button className="btn bg-blue-600 text-white text-lg">
+                <button className="btn bg-orange-700 text-white text-lg">
                   LOGIN
                 </button>
               </div>
             </form>
             <p className="text-left text-sm font-semibold text-gray-400 ml-9 mb-4">
               Do not have any account?<br></br> Please{" "}
-              <Link to="/register" className="text-blue-600">
+              <Link to="/register" className="text-orange-700">
                 REGISTER
               </Link>{" "}
               Now ! <br></br>{" "}
               <span className="text-lg font-bold text-black">or</span>
               <br></br>Log in with{" "}
-              <button onClick={handleGoogleSignIn} className="text-blue-600">
+              <button onClick={handleGoogleSignIn} className="text-orange-700">
                 GOOGLE
               </button>
               .
