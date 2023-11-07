@@ -4,6 +4,7 @@ import ErrorPage from "../Pages/ErrorPage/ErrorPage";
 import Home from "../Pages/Home/Home";
 import Blog from "../Pages/Blog/Blog";
 import Contact from "../Pages/Contact/Contact";
+import Sponsor from "../Pages/Home/Sponsor/Sponsor";
 
 
 const router = createBrowserRouter([
@@ -16,6 +17,11 @@ const router = createBrowserRouter([
         {
             path:'/',
             element:<Home></Home>
+        },
+        {
+            path: '/sponsor',
+            element:<Sponsor></Sponsor>,
+            loader: ()=> fetch('/sponsor.json')
         },
         {
             path:'/contact',

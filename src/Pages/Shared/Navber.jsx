@@ -58,7 +58,7 @@ const Navbar = () => {
 
           <li>
             <NavLink
-              to="/contact"
+              to="/Sponsor"
               style={({ isActive }) => {
                 return {
                   textDecoration: isActive ? "underline" : "",
@@ -66,7 +66,7 @@ const Navbar = () => {
                 };
               }}
             >
-              Contact
+              Sponsor
             </NavLink>
           </li>
 
