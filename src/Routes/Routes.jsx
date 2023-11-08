@@ -10,6 +10,7 @@ import Register from "../Register/Register";
 import AddedFoodItems from "../Food/AddedFoodItems/AddedFoodItems";
 import AddFood from "../Food/AddedFoodItems/AddFood/AddFood";
 import OrderedFood from "../Food/OrderedFood/OrderedFood";
+import PrivateRoute from "./PrivateRoute";
 
 
 const router = createBrowserRouter([
@@ -25,7 +26,7 @@ const router = createBrowserRouter([
         },
         {
             path: '/sponsor',
-            element:<Sponsor></Sponsor>,
+            element:<PrivateRoute><Sponsor></Sponsor></PrivateRoute>,
             loader: ()=> fetch('/sponsor.json')
         },
         {
@@ -46,15 +47,15 @@ const router = createBrowserRouter([
         },
         {
             path:'/addedFoodItems',
-            element:<AddedFoodItems></AddedFoodItems>
+            element:<PrivateRoute><AddedFoodItems></AddedFoodItems></PrivateRoute>
         },
         {
             path:'/addFood',
-            element:<AddFood></AddFood>
+            element:<PrivateRoute><AddFood></AddFood></PrivateRoute>
         },
         {
             path:'/orderedFood',
-            element:<OrderedFood></OrderedFood>
+            element:<PrivateRoute><OrderedFood></OrderedFood></PrivateRoute>
         },
         
     ]

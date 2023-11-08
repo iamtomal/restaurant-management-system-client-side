@@ -99,7 +99,7 @@ const Navbar = () => {
     </>
   );
   return (
-    <div className="flex flex-col-reverse justify-center lg:flex-row md:justify-between lg:justify-between items-center bg-orange-200">
+    <div className="flex flex-col-reverse justify-center lg:flex-row md:justify-between lg:justify-between items-center bg-orange-200 shadow-lg shadow-orange-300">
       <div className="overflow-hidden">
         <ul className=" font-raleway p-2 font-bold rounded-md text-sm md:text-lg lg:text-lg">
           {navLink}
