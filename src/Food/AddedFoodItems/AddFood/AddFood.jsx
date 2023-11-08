@@ -17,7 +17,7 @@ const AddFood = () => {
 
         const newFood = {image, name, brandName, type, price, description, details, rating};
 
-        fetch('http://localhost:5000/food',{
+        fetch('https://restaurant-management-server-2tw4qx0qc-tomal-debs-projects.vercel.app/food',{
             method: 'POST',
             headers:{'content-type' : 'application/json'},
             body: JSON.stringify(newFood)
@@ -64,7 +64,7 @@ const AddFood = () => {
         <div className="flex justify-center">
           <input
             type="text"
-            placeholder="Brand Name Ex. apple/samsung/nokia/sony/google/intel"
+            placeholder="Brand Name"
             name="brandName"
             className="input input-bordered input-info w-full max-w-xs mt-2"
           />

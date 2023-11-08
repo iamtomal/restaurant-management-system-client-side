@@ -1,6 +1,18 @@
 import { Link } from "react-router-dom";
+import Swal from 'sweetalert2'
+
 
 const AllFoodCard = ({ food }) => {
+
+    const handleOrder=() =>{
+        Swal.fire({
+            title: 'Success!',
+            text: 'Congratulation! Food Order Successfully.',
+            icon: 'success',
+            confirmButtonText: 'OK'
+          })
+    }
+
   const { _id, image, name, brandName, type, price } = food;
   return (
     <div>
@@ -54,11 +66,10 @@ const AllFoodCard = ({ food }) => {
                 >
                   Food Details
                 </Link>
-                <Link
-                  to={`/updateFoods/${_id}`}
+                <Link onClick={handleOrder}
                   className="text-center w-full bg-orange-700 py-2 rounded-md font-semibold text-white font-raleway"
                 >
-                  Update Food
+                  Order Food
                 </Link>
               </div>
             </div>

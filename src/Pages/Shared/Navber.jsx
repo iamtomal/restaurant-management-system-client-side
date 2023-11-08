@@ -42,7 +42,7 @@ const Navbar = () => {
           </li>
           <li>
             <NavLink
-              to="/addFood"
+              to="/about"
               style={({ isActive }) => {
                 return {
                   textDecoration: isActive ? "underline" : "",
@@ -50,7 +50,7 @@ const Navbar = () => {
                 };
               }}
             >
-              Add Food Items
+              About
             </NavLink>
           </li>
 
@@ -117,7 +117,7 @@ const Navbar = () => {
                   src={user.photoURL}
                   alt="" /></label>
                     <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
-                      <Link to={'/addedFoodItems'}><li><a>My added food items</a></li></Link>
+                      <Link to={'/allFood'}><li><a>My added food items</a></li></Link>
                       <Link to={'/addFood'}><li><a>Add a food item</a></li></Link>
                       <Link to={'/orderedFood'}><li><a>My ordered food item</a></li></Link>
                       

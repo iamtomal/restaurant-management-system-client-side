@@ -12,6 +12,7 @@ import AddFood from "../Food/AddedFoodItems/AddFood/AddFood";
 import OrderedFood from "../Food/OrderedFood/OrderedFood";
 import PrivateRoute from "./PrivateRoute";
 import AllFoodItems from "../Food/AllFoodItems/AllFoodItems";
+import About from "../About/About";
 
 
 const router = createBrowserRouter([
@@ -23,12 +24,13 @@ const router = createBrowserRouter([
 
         {
             path:'/',
-            element:<Home></Home>
+            element:<Home></Home>,
+            loader: ()=> fetch('https://restaurant-management-server-2tw4qx0qc-tomal-debs-projects.vercel.app/food')
         },
         {
             path:'/allFood',
             element:<AllFoodItems></AllFoodItems>,
-            loader: ()=> fetch('http://localhost:5000/food')
+            loader: ()=> fetch('https://restaurant-management-server-2tw4qx0qc-tomal-debs-projects.vercel.app/food')
         },
         {
             path: '/sponsor',
@@ -50,6 +52,10 @@ const router = createBrowserRouter([
         {
             path:'/register',
             element:<Register></Register>
+        },
+        {
+            path:'/about',
+            element:<PrivateRoute><About></About></PrivateRoute>
         },
         {
             path:'/addedFoodItems',
