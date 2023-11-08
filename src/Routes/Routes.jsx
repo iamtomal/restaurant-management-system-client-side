@@ -11,6 +11,7 @@ import AddedFoodItems from "../Food/AddedFoodItems/AddedFoodItems";
 import AddFood from "../Food/AddedFoodItems/AddFood/AddFood";
 import OrderedFood from "../Food/OrderedFood/OrderedFood";
 import PrivateRoute from "./PrivateRoute";
+import AllFoodItems from "../Food/AllFoodItems/AllFoodItems";
 
 
 const router = createBrowserRouter([
@@ -23,6 +24,11 @@ const router = createBrowserRouter([
         {
             path:'/',
             element:<Home></Home>
+        },
+        {
+            path:'/allFood',
+            element:<AllFoodItems></AllFoodItems>,
+            loader: ()=> fetch('http://localhost:5000/food')
         },
         {
             path: '/sponsor',
