@@ -13,6 +13,7 @@ import OrderedFood from "../Food/OrderedFood/OrderedFood";
 import PrivateRoute from "./PrivateRoute";
 import AllFoodItems from "../Food/AllFoodItems/AllFoodItems";
 import About from "../About/About";
+import FoodDetails from "../Food/FoodDetails/FoodDetails";
 
 
 const router = createBrowserRouter([
@@ -25,12 +26,12 @@ const router = createBrowserRouter([
         {
             path:'/',
             element:<Home></Home>,
-            loader: ()=> fetch('https://restaurant-management-server-2tw4qx0qc-tomal-debs-projects.vercel.app/food')
+            loader: ()=> fetch('https://restaurant-management-server-zeta.vercel.app/food')
         },
         {
             path:'/allFood',
             element:<AllFoodItems></AllFoodItems>,
-            loader: ()=> fetch('https://restaurant-management-server-2tw4qx0qc-tomal-debs-projects.vercel.app/food')
+            loader: ()=> fetch('https://restaurant-management-server-zeta.vercel.app/food')
         },
         {
             path: '/sponsor',
@@ -68,6 +69,12 @@ const router = createBrowserRouter([
         {
             path:'/orderedFood',
             element:<PrivateRoute><OrderedFood></OrderedFood></PrivateRoute>
+        },
+        {
+            path:'/foodDetails/:id',
+            element: <FoodDetails></FoodDetails>,
+            loader: () => fetch('https://restaurant-management-server-zeta.vercel.app/food')
+            
         },
         
     ]

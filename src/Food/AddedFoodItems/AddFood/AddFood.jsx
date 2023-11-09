@@ -17,7 +17,7 @@ const AddFood = () => {
 
         const newFood = {image, name, brandName, type, price, description, details, rating};
 
-        fetch('https://restaurant-management-server-2tw4qx0qc-tomal-debs-projects.vercel.app/food',{
+        fetch('https://restaurant-management-server-zeta.vercel.app/food',{
             method: 'POST',
             headers:{'content-type' : 'application/json'},
             body: JSON.stringify(newFood)
